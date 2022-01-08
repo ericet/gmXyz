@@ -37,7 +37,6 @@ function sleep(ms) {
 }
 
 async function start() {
-    console.log(USERNAME)
     let followers = await getFollowers(USERNAME);
     for (let follower of followers) {
         if (!follower.followedByMe) {
