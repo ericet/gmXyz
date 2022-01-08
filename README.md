@@ -8,8 +8,8 @@ npm install
 
 ### Setup
 * mv .env.example .env
-* Fill in your USER and TOKEN 
-  * USER - Your ENS name or wallet address
+* Fill in your USERID and TOKEN 
+  * USERID - Your ENS name or wallet address
   * TOKEN - press F12 and copy accessToken value from Application->Local Storage->https://gm.xyz
 
 
