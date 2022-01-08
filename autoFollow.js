@@ -3,7 +3,7 @@ require("dotenv").config();
 let headers = {
     authorization: 'Bearer '+process.env.TOKEN
 };
-const USERNAME = process.env.USER;
+const USERNAME = process.env.USERID;
 const INTERVAL = process.env.INTERVAL;
 function getFollowers(address) {
     return new Promise((resolve, reject) => {
