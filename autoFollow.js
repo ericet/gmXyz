@@ -3,6 +3,7 @@ require("dotenv").config();
 let headers = {
     authorization: 'Bearer '+process.env.TOKEN
 };
+const USERNAME = process.env.USERNAME;
 const INTERVAL = process.env.INTERVAL;
 function getFollowers(address) {
     return new Promise((resolve, reject) => {
@@ -36,7 +37,7 @@ function sleep(ms) {
 }
 
 async function start() {
-    let followers = await getFollowers('ericet.eth');
+    let followers = await getFollowers(USERNAME);
     for (let follower of followers) {
         if (!follower.followedByMe) {
             await follow(follower.username);
